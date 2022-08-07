@@ -1,5 +1,5 @@
 Hello, World! I did it!!!
-\n
+'\n'
 
 This is ver. 2
 I did it again
