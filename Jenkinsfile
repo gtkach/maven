@@ -17,7 +17,7 @@ pipeline {
 		}
 		stage ('Deployments') {
 		  parallel{
-		    stage ('Deploy to Staging){
+		    stage ('Deploy to Staging'){
 		      steps {
 		        sh "cp **/target/*.war /home/hlib/Desktop/sandbox/tomcat-stage/webapps"
 		      }
