@@ -24,10 +24,7 @@ pipeline {
 		   }
 		   stage ('Deploy to prod') {
 		     steps {
-		       timeout(time:5, unit:'DAYS'){
-		       input message:'Approve Prod deployment?'
-		     }
-		     sh "cp **/target/*.war /home/hlib/Desktop/sandbox/tomcat-prod/webapps"
+		       sh "cp **/target/*.war /home/hlib/Desktop/sandbox/tomcat-prod/webapps"
 		   }
 		  }
 		}
